@@ -86,45 +86,6 @@ export default function dashboard() {
                                 </div>
                             </div>
                         </div>
-                        {/* for mobile web and notebook web
-                     <div className="inline-block md:hidden">
-                        <div className="my-20">
-                            <div className="flex items-center justify-center">
-                                <div className="text-center">
-                                    <div className="pilih_design"></div>
-                                    <p className="">Steps</p>
-                                </div>
-                                <div>
-                                    <div className="line_steps"></div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="pilih_design"></div>
-                                    <p className="">Steps</p>
-                                </div>
-                                <div>
-                                    <div className="line_steps"></div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="pilih_design"></div>
-                                    <p className="">Steps</p>
-                                </div>
-                                <div>
-                                    <div className="line_steps"></div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="pilih_design"></div>
-                                    <p className="">Steps</p>
-                                </div>
-                                <div>
-                                    <div className="line_steps"></div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="pilih_design"></div>
-                                    <p className="">Steps</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     </div>
                 </div>
             </section>
@@ -242,18 +203,6 @@ export default function dashboard() {
                                     1 GB Web Hosting
                                 </p>
                             </div>
-                            {/* <div className="items flex">
-                            <div className="icon_items1"></div>
-                            <p className="flex items-center pl-3">
-                                30 days hosting free
-                            </p>
-                        </div>
-                        <div className="items flex">
-                            <div className="icon_items1"></div>
-                            <p className="flex items-center pl-3">
-                                30 days hosting free
-                            </p>
-                        </div> */}
                         </div>
                     </div>
                 </div>
@@ -274,12 +223,12 @@ export default function dashboard() {
                         autoPlaySpeed={8000}
                         centerMode={false}
                         className="gd-carousel"
-                        containerClass="container-with-dots"
-                        dotListClass=""
+                        containerclassName="container-with-dots"
+                        dotListclassName=""
                         draggable
                         focusOnSelect={false}
                         infinite
-                        itemClass=""
+                        itemclassName=""
                         keyBoardControl
                         minimumTouchDrag={80}
                         pauseOnHover
@@ -505,7 +454,234 @@ export default function dashboard() {
                 </div>
             </section>
             {/* Q&A */}
-            <section id="qna" className="h-screen"></section>
+            <section id="qna" className="h-screen pt-24">
+                <div className="flex flex-col text-white text-right">
+                    <div className="mb-10 mx-24">
+                        <h3>Pertanyaan Umum</h3>
+                        <p>lihat pertanyaan serupa</p>
+                    </div>
+                    <div className="flex justify-around">
+                        <div className="">
+                            <div
+                                className="accordion mt-8"
+                                id="accordionExample"
+                            >
+                                <div className="accordion-item bg-white w-accordion border border-gray-200">
+                                    <h2
+                                        className="accordion-header mb-0"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            className="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsewhat"
+                                            aria-expanded="false"
+                                            aria-controls="collapsewhat"
+                                        >
+                                            <p className="font-bold">
+                                                Apa itu DreamIT
+                                            </p>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapsewhat"
+                                        className="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div className="accordion-body text-black text-left py-4 px-5">
+                                            <strong>
+                                                This is the second item's
+                                                accordion body.
+                                            </strong>{" "}
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the{" "}
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="accordion mt-8"
+                                id="accordionExample"
+                            >
+                                <div className="accordion-item bg-white w-accordion border border-gray-200">
+                                    <h2
+                                        className="accordion-header mb-0"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            className="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsehosting"
+                                            aria-expanded="false"
+                                            aria-controls="collapsehosting"
+                                        >
+                                            <p className="font-bold">
+                                                Apa itu DreamIT
+                                            </p>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapsehosting"
+                                        className="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div className="accordion-body text-black text-left py-4 px-5">
+                                            <strong>
+                                                This is the second item's
+                                                accordion body.
+                                            </strong>{" "}
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the{" "}
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div
+                                className="accordion mt-8"
+                                id="accordionExample"
+                            >
+                                <div className="accordion-item bg-white w-accordion border border-gray-200">
+                                    <h2
+                                        className="accordion-header mb-0"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            className="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseporto"
+                                            aria-expanded="false"
+                                            aria-controls="collapseporto"
+                                        >
+                                            <p className="font-bold">
+                                                Apa itu DreamIT
+                                            </p>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseporto"
+                                        className="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div className="accordion-body text-black text-left py-4 px-5">
+                                            <strong>
+                                                This is the second item's
+                                                accordion body.
+                                            </strong>{" "}
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the{" "}
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="accordion mt-8"
+                                id="accordionExample"
+                            >
+                                <div className="accordion-item bg-white w-accordion border border-gray-200">
+                                    <h2
+                                        className="accordion-header mb-0"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            className="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsefour"
+                                            aria-expanded="false"
+                                            aria-controls="collapsefour"
+                                        >
+                                            <p className="font-bold">
+                                                Apa itu DreamIT
+                                            </p>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapsefour"
+                                        className="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div className="accordion-body text-black text-left py-4 px-5">
+                                            <strong>
+                                                This is the second item's
+                                                accordion body.
+                                            </strong>{" "}
+                                            It is hidden by default, until the
+                                            collapse plugin adds the appropriate
+                                            classes that we use to style each
+                                            element. These classes control the
+                                            overall appearance, as well as the
+                                            showing and hiding via CSS
+                                            transitions. You can modify any of
+                                            this with custom CSS or overriding
+                                            our default variables. It's also
+                                            worth noting that just about any
+                                            HTML can go within the{" "}
+                                            <code>.accordion-body</code>, though
+                                            the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex h-2/6 justify-center">
+                    <div className="flex items-end">
+                        <button className="look-other">
+                            <p className="font-bold">
+                                Lihat lainnya{" "}
+                                <Icon
+                                    icon="material-symbols:arrow-right-alt-rounded"
+                                    inline={true}
+                                    style={{ display: "inline-block" }}
+                                />
+                            </p>
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }

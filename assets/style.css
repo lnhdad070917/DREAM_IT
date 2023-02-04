@@ -203,3 +203,28 @@ p {
 .gd-carousel .react-multiple-carousel__arrow--right {
     right: calc(-5% + 1px);
 }
+
+/* Q&A */
+
+.w-accordion {
+    width: 530px;
+}
+
+.accordion-item:last-of-type,
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.look-other {
+    /* width: 300px; */
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
