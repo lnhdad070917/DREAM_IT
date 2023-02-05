@@ -454,8 +454,8 @@ export default function dashboard() {
                 </div>
             </section>
             {/* Q&A */}
-            <section id="qna" className="h-screen pt-24">
-                <div className="flex flex-col text-white text-right">
+            <section id="qna" className="pt-24 flex flex-col">
+                <div className="text-white text-right">
                     <div className="mb-10 mx-24">
                         <h3>Pertanyaan Umum</h3>
                         <p>lihat pertanyaan serupa</p>
@@ -566,7 +566,7 @@ export default function dashboard() {
                         <div className="">
                             <div
                                 className="accordion mt-8"
-                                id="accordionExample"
+                                id="accordionExample1"
                             >
                                 <div className="accordion-item bg-white w-accordion border border-gray-200">
                                     <h2
@@ -667,7 +667,7 @@ export default function dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-2/6 justify-center">
+                <div className="flex h-2/6 justify-center mt-24 mb-10">
                     <div className="flex items-end">
                         <button className="look-other">
                             <p className="font-bold">

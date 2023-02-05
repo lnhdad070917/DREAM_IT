@@ -172,7 +172,7 @@ export default function Example() {
 
     return (
         <Navbar className="mx-auto top fixed bg-nav w-full py-2 px-4 lg:px-8">
-            <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+            <div className="container mx-auto flex items-center justify-around text-blue-gray-900">
                 <Typography
                     as="a"
                     href="#"
@@ -203,7 +203,7 @@ export default function Example() {
                 </div>
                 <IconButton
                     variant="text"
-                    className="ml-auto text-black h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+                    className="flex justify-center items-center h-6 w-6 text-black text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
                     ripple={false}
                     onClick={() => setOpenNav(!openNav)}
                 >

@@ -44,7 +44,7 @@ p {
 .bg-nav {
     background: #0081c9;
     mix-blend-mode: normal;
-    z-index: 2;
+    z-index: 10;
     border: none;
 }
 
@@ -227,4 +227,14 @@ p {
     background-color: #ffffff;
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+.react-multiple-carousel__arrow {
+    z-index: 1 !important;
+    min-width: 0px !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    font-size: 28px !important;
+    font-weight: bold;
 }
