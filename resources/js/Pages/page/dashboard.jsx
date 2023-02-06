@@ -10,7 +10,8 @@ export default function dashboard() {
     return (
         <div>
             {/* jumbotron */}
-            <section className="background-1">
+            {/* WEB Laptop/PC */}
+            <section className="bg-1 hidden lg:block">
                 <div className="md:h-screen pt-10 md:flex md:justify-between mx-12">
                     <img
                         src={illustrasi1}
@@ -19,10 +20,10 @@ export default function dashboard() {
                     />
                     <div className="flex md:items-center">
                         <div className="pr-10">
-                            <h2 className="md:text-right text-white">
+                            <h2 className="md:text-right text-white hidden md:block">
                                 Buat Portofolio Onlinemu <br /> Tanpa Ribet
                             </h2>
-                            <p className="md:text-right text-white">
+                            <p className="md:text-right text-white hidden md:block">
                                 Ayo Coba Sekarang
                             </p>
                             <button className="md:ml-20 bg-amber-400 border-inherit text-white shadow-lg duration-500 px-8 py-2 mx-3 hover:text-black rounded border-white">
@@ -32,56 +33,100 @@ export default function dashboard() {
                     </div>
                 </div>
             </section>
+            {/* WEB Mobile */}
+            <section className="bg-mobile md:bg-1 block lg:hidden">
+                <div className="h-[57vh] pt-10 md:pt-0 mx-12 flex flex-col justify-center">
+                    <h2
+                        className="text-center text-white text-sm md:text-2xl"
+                        // style={{ fontSize: 15, lineHeight: 1 }}
+                    >
+                        Buat Portofolio Onlinemu Tanpa Ribet
+                    </h2>
+                    <p
+                        className="text-center text-white text-sm md:text-xl mt-1"
+                        // style={{ fontSize: 13, paddingTop: 5, lineHeight: 1 }}
+                    >
+                        Ayo Coba Sekarang
+                    </p>
+                    <div className="w-full flex justify-center">
+                        <img
+                            src={illustrasi1}
+                            alt="Illustrasi"
+                            className="w-48 md:w-[30rem]"
+                        />
+                    </div>
+                    <div className="flex justify-center items-center mt-5">
+                        <button className="bg-amber-400 border-inherit text-white shadow-lg duration-500 mx-3 hover:text-black rounded border-white w-16 h-7 md:w-40 md:h-10">
+                            <p className="text-sm md:text-xl">Pesan</p>
+                        </button>
+                    </div>
+                </div>
+            </section>
             {/* Steps */}
-            <section className="h-screen flex items-center justify-center">
+            <section className="h-[50vh] lg:h-screen flex items-center justify-center">
                 <div>
                     <div className="text-center">
-                        <h2 className="text-white">
+                        <h2 className="text-white text-3xl lg:text-5xl">
                             5 Langkah Mudah Untuk Membuat Wesbitemu
                         </h2>
-                        <p className="text-white">Ikuti langkahnya</p>
+                        <p className="text-white text-2xl lg:text-4xl">
+                            Ikuti langkahnya
+                        </p>
                     </div>
                     <div className="flex justify-center">
-                        <div className="hidden md:inline-block">
+                        <div className="block">
                             <div className="my-16">
                                 <div className="flex justify-center">
                                     <div className="text-center">
-                                        <div className="pilih_design1"></div>
-                                        <p className="text-white">
+                                        <div className="hidden lg:inline-block pilih_design1"></div>
+                                        <div className="lg:hidden pilih_design1-mobile"></div>
+                                        <p className="text-white text-sm lg:text-2xl">
                                             Pilih Desain
                                         </p>
                                     </div>
-                                    <div className="flex items-start py-16">
-                                        <div className="line_steps"></div>
+                                    <div className="flex items-start py-4 lg:py-16">
+                                        <div className="hidden lg:inline-block line_steps"></div>
+                                        <div className="lg:hidden line_steps-mobile"></div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="isi_folmulir"></div>
-                                        <p className="text-white">
+                                        <div className="hidden lg:inline-block isi_folmulir"></div>
+                                        <div className="lg:hidden isi_folmulir-mobile"></div>
+                                        <p className="text-white text-sm lg:text-2xl">
                                             Isi Folmulir
                                         </p>
                                     </div>
-                                    <div className="flex items-start py-16">
-                                        <div className="line_steps"></div>
+                                    <div className="flex items-start py-4 lg:py-16">
+                                        <div className="hidden lg:inline-block line_steps"></div>
+                                        <div className="lg:hidden line_steps-mobile"></div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="pembayaran"></div>
-                                        <p className="text-white">Pembayaran</p>
+                                        <div className="hidden lg:inline-block pembayaran"></div>
+                                        <div className="lg:hidden pembayaran-mobile"></div>
+                                        <p className="text-white text-sm lg:text-2xl">
+                                            Pembayaran
+                                        </p>
                                     </div>
-                                    <div className="flex items-start py-16">
-                                        <div className="line_steps"></div>
+                                    <div className="flex items-start py-4 lg:py-16">
+                                        <div className="hidden lg:inline-block line_steps"></div>
+                                        <div className="lg:hidden line_steps-mobile"></div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="jam"></div>
-                                        <p className="text-white">
+                                        <div className="hidden lg:inline-block jam"></div>
+                                        <div className="lg:hidden jam-mobile"></div>
+                                        <p className="text-white text-sm lg:text-2xl">
                                             Proses <br /> 1x24 Jam
                                         </p>
                                     </div>
-                                    <div className="flex items-start py-16">
-                                        <div className="line_steps"></div>
+                                    <div className="flex items-start py-4 lg:py-16">
+                                        <div className="hidden lg:inline-block line_steps"></div>
+                                        <div className="lg:hidden line_steps-mobile"></div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="selesai"></div>
-                                        <p className="text-white">Selesai</p>
+                                        <div className="hidden lg:inline-block selesai"></div>
+                                        <div className="lg:hidden selesai-mobile"></div>
+                                        <p className="text-white text-sm lg:text-2xl">
+                                            Selesai
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +135,7 @@ export default function dashboard() {
                 </div>
             </section>
             {/* Pilih Desain */}
-            <section id="pilih_desain" className="h-screen mb-16">
+            {/* <section id="pilih_desain" className="h-screen mb-16">
                 <div className="text-center text-white md:text-right pt-24 pb-5 mx-24 ">
                     <h3>Pilih Desain Sesuai Kebutuhan</h3>
                     <p>Pilih Desainmu</p>
@@ -130,9 +175,9 @@ export default function dashboard() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* Fasilitas */}
-            <section
+            {/* <section
                 id="fasilitas"
                 className="h-screen flex justify-center items-center"
             >
@@ -206,9 +251,9 @@ export default function dashboard() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* Testimoni */}
-            <section id="testimoni" className="h-screen">
+            {/* <section id="testimoni" className="h-screen">
                 <div className="flex flex-col items-center pt-32 mb-20 justify-center">
                     <h3 className="text-white">
                         Bagaimana Pendapat Mereka Tentang Kami
@@ -452,9 +497,9 @@ export default function dashboard() {
                         </div>
                     </Carousel>
                 </div>
-            </section>
+            </section> */}
             {/* Q&A */}
-            <section id="qna" className="pt-24 flex flex-col">
+            {/* <section id="qna" className="pt-24 flex flex-col">
                 <div className="text-white text-right">
                     <div className="mb-10 mx-24">
                         <h3>Pertanyaan Umum</h3>
@@ -681,7 +726,7 @@ export default function dashboard() {
                         </button>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 }

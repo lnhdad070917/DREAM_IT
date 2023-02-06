@@ -14,7 +14,7 @@ export default function Homepage(props) {
             <BrowserRouter>
                 <Navbar />
                 <Dashboard />
-                <Footer />
+                {/* <Footer /> */}
             </BrowserRouter>
             {/* <div className="flex justify-center items-center min-h-screen text-2xl">
                 <Head title={props.title} />

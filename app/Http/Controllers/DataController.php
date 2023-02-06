@@ -17,7 +17,7 @@ class DataController extends Controller
     {
         // return Inertia::render('templates/Navbar');
         return Inertia::render('Homepage', [
-            'title' => 'DREAM IT',
+            'title' => 'Dream IT',
             'description' => 'Selamat datang di web kami',
         ]);
     }

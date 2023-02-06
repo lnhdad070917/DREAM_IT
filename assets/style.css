@@ -60,10 +60,14 @@ p {
     height: 50vh;
 }
 
-.background-1 {
+.bg-1 {
     background-image: url(../assets/img/background.png);
     background-size: 100%;
-    /* background-repeat: no-repeat; */
+    /* height: 80vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-repeat: no-repeat;
 }
 
 .pilih_design1 {
@@ -237,4 +241,67 @@ p {
 .react-multiple-carousel__arrow::before {
     font-size: 28px !important;
     font-weight: bold;
+}
+
+/* MOBILE WEB */
+
+.bg-mobile {
+    background-image: url(../assets/img/background_mobile.svg);
+    background-size: 100%;
+    background-position-y: 60px;
+    background-repeat: no-repeat;
+}
+
+.pilih_design1-mobile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px dashed white;
+    background: url("https://api.iconify.design/icons8/idea.svg?color=%23ffc93c")
+        no-repeat center center / contain;
+    background-size: 68%;
+}
+.isi_folmulir-mobile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px dashed white;
+    background: url("https://api.iconify.design/mdi/text-box-edit-outline.svg?color=%23ffc93c")
+        no-repeat center center / contain;
+    background-size: 68%;
+}
+.pembayaran-mobile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px dashed white;
+    background: url("https://api.iconify.design/fa6-solid/money-bills.svg?color=%23ffc93c")
+        no-repeat center center / contain;
+    background-size: 68%;
+}
+.jam-mobile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px dashed white;
+    background: url("https://api.iconify.design/mdi/clock-outline.svg?color=%23ffc93c")
+        no-repeat center center / contain;
+    background-size: 68%;
+}
+.selesai-mobile {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 3px dashed white;
+    background: url("https://api.iconify.design/mdi/deal-outline.svg?color=%23ffc93c")
+        no-repeat center center / contain;
+    background-size: 68%;
+}
+
+.line_steps-mobile {
+    width: 50px;
+    position: absolute;
+    justify-content: flex-start;
+    /* height: 1px; */
+    border: 1px solid white;
 }
