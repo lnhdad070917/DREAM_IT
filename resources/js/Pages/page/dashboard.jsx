@@ -200,7 +200,7 @@ export default function dashboard() {
             {/* WEB Mobile */}
             <div className="block lg:hidden">{bg_2}</div>
             {/* Steps */}
-            <section className="h-[50vh] lg:h-screen flex items-center justify-center">
+            <section className="h-[30vh] lg:h-screen flex items-center justify-center">
                 <div>
                     <div className="text-center">
                         <h2 className="text-white text-lg md:text-xl lg:text-5xl">
@@ -349,7 +349,7 @@ export default function dashboard() {
             {/* Fasilitas */}
             <section
                 id="fasilitas"
-                className="fasilitas h-[40vh] lg:h-screen flex justify-center items-center"
+                className="fasilitas h-[25vh] md:h-[35vh] lg:h-screen flex justify-center items-center"
             >
                 <div className="md:mx-24 py-10">
                     <div className="md:mb-10 text-white text-center md:text-left">
@@ -363,12 +363,14 @@ export default function dashboard() {
                 </div>
             </section>
             {/* Testimoni */}
-            <section id="testimoni" className="h-[50vh] lg:h-screen md:pb-10">
+            <section id="testimoni" className="h-[30vh] lg:h-screen md:pb-10">
                 <div className="flex flex-col items-center pt-5 lg:pt-32 md:mb-20 justify-center">
-                    <h3 className="text-white text-lg">
+                    <h3 className="text-white text-lg md:text-2xl text-center">
                         Bagaimana Pendapat Mereka Tentang Kami
                     </h3>
-                    <p className="text-white text-sm">Lihat testimoni</p>
+                    <p className="text-white text-sm md:text-xl">
+                        Lihat testimoni
+                    </p>
                 </div>
                 <div className="w-9/12 mx-auto gd-carousel-wrapper">
                     <Carousel
@@ -629,7 +631,7 @@ export default function dashboard() {
                 </div>
             </section>
             {/* Q&A */}
-            <section id="qna" className="lg:pt-24 flex flex-col">
+            <section id="qna" className="md:pt-10 lg:pt-24 flex flex-col">
                 <div className="text-white text-center md:text-right">
                     <div className="md:mb-10 md:mx-24">
                         <h3 className="text-2xl md:text-5xl">
