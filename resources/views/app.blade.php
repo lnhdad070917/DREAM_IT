@@ -10,10 +10,11 @@
     <!-- Fonts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Scripts -->
+    {{-- Custom CSS
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}"> --}}
     @routes
     @viteReactRefresh
-    @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx", 'resources/css/app.css'])
+    @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
     {{-- ,'public/assets/style.css' --}}
     @inertiaHead
 </head>
@@ -27,7 +28,7 @@
     <!-- Modal -->
     <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
         id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        <div class="modal-dialog bg-1 modal-dialog-centered relative w-auto pointer-events-none">
             <div
                 class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
                 <div

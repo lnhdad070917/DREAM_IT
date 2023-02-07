@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../../assets/img/dreamit.png";
+import logo from "../../../../public/assets/img/dreamit.png";
 // // import js from "../../../../assets/js/index.js";
 
 // export default function Navbar() {

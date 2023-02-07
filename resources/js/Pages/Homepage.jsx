@@ -4,6 +4,7 @@ import { Head } from "@inertiajs/react";
 import Navbar from "./templates/Navbar";
 import Dashboard from "./page/dashboard";
 import Footer from "./templates/footer";
+import "../../../public/assets/style.css";
 import "tw-elements";
 
 export default function Homepage(props) {
@@ -14,7 +15,7 @@ export default function Homepage(props) {
             <BrowserRouter>
                 <Navbar />
                 <Dashboard />
-                {/* <Footer /> */}
+                <Footer />
             </BrowserRouter>
             {/* <div className="flex justify-center items-center min-h-screen text-2xl">
                 <Head title={props.title} />

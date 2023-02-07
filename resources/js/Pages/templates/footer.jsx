@@ -10,9 +10,9 @@ export default function footer() {
     };
     return (
         <div style={{ background: "#0081C9" }}>
-            <footer className="h-3/6 pt-10 pb-20 mx-32 text-white">
-                <div className="flex justify-between">
-                    <div className="w-1/3 px-10">
+            <footer className="h-3/6 pt-10 pb-20 lg:mx-32 text-white">
+                <div className="flex flex-col justify-between flex-warp">
+                    <div className="lg:w-1/3 px-10">
                         <h3 style={styleh3}>Tentang Kami</h3>
                         <p className="text-justify" style={stylep}>
                             DreamIT merupakan platform penyedia jasa pembuatan
@@ -22,7 +22,7 @@ export default function footer() {
                             website impianmu.
                         </p>
                     </div>
-                    <div className="flex flex-col w-1/3 px-10">
+                    <div className="flex flex-col lg:w-1/3 px-10">
                         <h3 style={styleh3}>Tautan Langsung</h3>
                         <a href="#" style={stylep}>
                             Home
@@ -37,7 +37,7 @@ export default function footer() {
                             Testimoni
                         </a>
                     </div>
-                    <div className="w-1/3 px-10">
+                    <div className="lg:w-1/3 px-10">
                         <h3 style={styleh3}>Kontak Kami</h3>
                         <p style={stylep}>
                             <span>
