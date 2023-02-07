@@ -242,22 +242,24 @@ export default function Example() {
             <MobileNav open={openNav}>
                 <div className="container text-center mx-auto">
                     {navList}
-                    <Button
-                        variant="gradient"
-                        size="sm"
-                        // fullWidth
-                        className="w-full text-amber-400 md:text-white shadow-lg duration-500 px-8 py-2 my-2 hover:text-black rounded border-orange"
-                    >
-                        <span>Login</span>
-                    </Button>
-                    <Button
-                        variant="gradient"
-                        size="sm"
-                        // fullWidth
-                        className="w-full bg-amber-400 border-inherit text-white shadow-lg duration-500 px-8 py-2 my-2 hover:text-black rounded border-white"
-                    >
-                        <span>Register</span>
-                    </Button>
+                    <div className="flex justify-center">
+                        <Button
+                            variant="gradient"
+                            size="sm"
+                            // fullWidth
+                            className="w-1/3 mr-2 text-amber-400 md:text-white shadow-lg duration-500 px-8 py-2 my-2 hover:text-black rounded border-orange"
+                        >
+                            <span>Login</span>
+                        </Button>
+                        <Button
+                            variant="gradient"
+                            size="sm"
+                            // fullWidth
+                            className="w-1/3 ml-2 bg-amber-400 border-inherit text-white shadow-lg duration-500 px-8 py-2 my-2 hover:text-black rounded border-white"
+                        >
+                            <span>Register</span>
+                        </Button>
+                    </div>
                 </div>
             </MobileNav>
         </Navbar>
